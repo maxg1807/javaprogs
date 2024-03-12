@@ -1,14 +1,19 @@
+import java.util.Scanner;
+
 class Test
+
+
 
 {
 	
     public static void main(String[] args)
     {
+    	Scanner scan = new Scanner(System.in);
     	int input;
-    	int answer= 1;
+    	int answer;
     	System.out.print("enter number -> ");
-    	input = EasyIn.getInt();
-    	answer = isEven();
-    	System.out.print(answer);
+    	input = scan.nextInt();
+    	answer = Jlab61.isEven();
+    	System.out.println(answer);
     }
 }

@@ -1,26 +1,27 @@
+import java.util.Scanner;
 
-class Skeleton
+class Jlab62
 
-// Student Name : 		max gibney
-// Student Id Number : 	C00300116
-// Date :				1/9/2005
-// Purpose : 			A Sample skeleton program
+// to see if a symbol is a letter
 
 
-// Error : "Invalid path, \bin\javac.exe -classpath"
-// 	Solution
-// 		Configure -> Options -> JDK Profiles -> New -> browse to C:\Program Files\Java\JDK1.7.03_03
-//		Them click "OK" In the options dialogue box (if there is a blank line over "JDK ver . . delete it) Then click OK
 
 {
     public static void main(String[] args)
     {
-    	String name ;
+    	Scanner scan = new Scanner(System.in);
+    	String Char;
     
-    	System.out.println("Enter your name ");   
-		name = EasyIn.getString() ;
-    	System.out.println("Hello " + name) ;
-    	System.out.println("Have a nice day !") ;
+    	System.out.println("Enter your symbol ");   
+		Char = scan.nextchar();
+        if(Char >= a <= z || Char >= A <= Z)
+        	{
+        		System.out.println("this is an alphabetic letter");
+        	}
+        else
+        	{
+        		System.out.println("this is not an alphabetic letter");
+        	}
     }
 }
 
